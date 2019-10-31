@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "756719088520",
+    "firebase_url": "https://exalted-strata-248919.firebaseio.com",
+    "project_id": "exalted-strata-248919",
+    "storage_bucket": "exalted-strata-248919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756719088520:android:7062f3369b05c0c522c03d",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756719088520-h019fh013f7re2uuue49gq9a91ujn0eq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR1tJroNFyJunlIvXcK1eE_gxm8ELz_KM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756719088520-h019fh013f7re2uuue49gq9a91ujn0eq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
