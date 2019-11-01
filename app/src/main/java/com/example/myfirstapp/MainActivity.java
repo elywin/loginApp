@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,13 +32,14 @@ FirebaseAuth mFirebaseAuth;
         btn1 = findViewById(R.id.btn);
         txt1 = findViewById(R.id.text1);
         txt2 = findViewById(R.id.text2);
+        final ProgressBar simpleProgressBar = (ProgressBar) findViewById(R.id.simpleProgressBar);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email= txt1.getText().toString();
                 String  password= txt2.getText().toString();
-
+                simpleProgressBar.setVisibility(View.VISIBLE);
                 if (email.isEmpty()){
                     txt1.setError("Please enter email id");
                     txt1.requestFocus();
@@ -54,7 +56,7 @@ FirebaseAuth mFirebaseAuth;
                                 Toast.makeText(MainActivity.this,"SignUp unsuccessful Try again",Toast.LENGTH_SHORT).show();
 
                             }else {
-                                startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                                startActivity(new Intent(MainActivity.this,HomeActivity.class));
                             }
                         }
                     });
@@ -63,6 +65,7 @@ FirebaseAuth mFirebaseAuth;
 
                 }
             }
+
         });
 
         txtv1.setOnClickListener(new View.OnClickListener() {
