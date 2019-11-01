@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn3);
         txt4 = findViewById(R.id.text4);
         txt5 = findViewById(R.id.text5);
+        final ProgressBar simpleProgressBar = (ProgressBar) findViewById(R.id.simpleProgressBar);
 
     mAuthStateListener = new FirebaseAuth.AuthStateListener() {
 
@@ -55,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         public void onClick(View view) {
             String email= txt4.getText().toString();
             String  password= txt5.getText().toString();
-
+            simpleProgressBar.setVisibility(View.VISIBLE);
             if (email.isEmpty()){
                 txt4.setError("Please enter email id");
                 txt4.requestFocus();
