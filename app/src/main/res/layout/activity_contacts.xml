@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/firstbackground"
     tools:context=".ContactsActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ffffff"
+    android:id="@+id/contact_us"
+    android:textSize="20dp"
+    android:text="@string/message"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:textSize="15dp"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:id="@+id/message_contact"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/send"
+        android:background="@drawable/buttonbackground"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:id="@+id/send"
+
+        />
+
+</LinearLayout>

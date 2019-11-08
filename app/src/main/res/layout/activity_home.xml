@@ -5,23 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/firstbackground"
     tools:context=".HomeActivity">
-<Button
-    android:id="@+id/btn8"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="LogOut"
-    android:layout_marginTop="20dp"
-    android:textColor="#000000"
-    android:background="#A09D9D"
-    />
+
     <TextView
-        android:id="@+id/txtview99"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You have logged in"
-        android:textColor="#F44336"
-        android:layout_marginTop="200dp"
-        android:layout_gravity="center"
-       />
+        android:text="Home"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/home"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Gallery"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:background="@drawable/buttonbackground"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="About"
+                android:id="@+id/about"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonbackground"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Contact"
+                android:id="@+id/contact"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonbackground"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtview99"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="You have logged in"-->
+<!--        android:textColor="#F44336"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:layout_gravity="center"-->
+<!--       />-->
 </LinearLayout>

@@ -10,21 +10,23 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
-Button btn9;
-FirebaseAuth mFirebaseAuth;
-private FirebaseAuth.AuthStateListener mAuthStateListener;
+    //Button btn9;
+    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        btn9 = findViewById(R.id.btn8);
+        // btn9 = findViewById(R.id.btn8);
 
-        btn9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
-            }
-        });
+//        btn9.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FirebaseAuth.getInstance().signOut();
+//                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+//            }
+//        });
+//    }
     }
 }
