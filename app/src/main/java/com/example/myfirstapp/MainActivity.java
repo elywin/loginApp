@@ -34,6 +34,7 @@ FirebaseAuth mFirebaseAuth;
         txt2 = findViewById(R.id.text2);
         final ProgressBar simpleProgressBar = (ProgressBar) findViewById(R.id.simpleProgressBar);
 
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +57,7 @@ FirebaseAuth mFirebaseAuth;
                                 Toast.makeText(MainActivity.this,"SignUp unsuccessful Try again",Toast.LENGTH_SHORT).show();
 
                             }else {
-                                startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                                startActivity(new Intent(MainActivity.this,SecondActivity.class));
                             }
                         }
                     });
